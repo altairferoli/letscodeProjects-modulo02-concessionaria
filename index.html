@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Projeto Final</title>
+  </head>
+  <body>
+    <header>
+      <h1>LOJA DE CARROS</h1>      
+    </header>
+    <section class="input-section">
+      <p>
+        <label for="">Modelo:</label>
+        <input type="text" id="modelo" value="Digite aqui" onfocus="this.value=''" />
+      </p>
+      <p>
+        <label for="">Ano:</label>
+        <input type="number" id="ano" />
+      </p>
+      <p>
+        <label for="">Cor:</label>
+        <input type="color" id="cor" />
+      </p>
+      <p>
+        <label for="">Condição:</label>
+        <select id="condicao">
+          <option value="Novo">Novo</option>
+          <option value="Semi-novo">Semi-novo</option>
+          <option value="Usado">Usado</option>
+        </select>
+      </p>
+      <p>
+        <label for="">Preço:</label>
+        <input type="number" id="preco" />
+      </p>
+      <button type="reset" onclick="listaCarros()">Adicionar</button>
+    </section>
+    <section class="text totais">
+      <p>Veículos: <span id="qtdVeiculos">0</span></p>
+      <!-- <p>Valor Total: <span id="totalVeiculos">0</span></p> -->
+    </section>
+
+    <section>
+      <p><span id="listaVeiculos"></span></p>
+      <table>
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Modelo</td>
+            <td>Ano</td>
+            <td>Cor</td>
+            <td>Condição</td>
+            <td>Preço</td>
+          </tr>
+        </thead>
+        <tbody id="lista">
+          <tr>
+            <td colspan="6">Não há nenhum veículo cadastrado!</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="5">Valor Total: </td>
+            <td id="totalVeiculos">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <script src="./carros.js"></script>
+  </body>
+</html>

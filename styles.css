@@ -1,0 +1,141 @@
+/* GENERAL SETTINGS*/
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: mediumslateblue;
+  color: white;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 6rem 0 3rem;
+  filter: drop-shadow(0 .1rem .2rem black);
+}
+.text {
+  padding: 1rem;
+  line-height: 3rem;
+  text-align: justify;
+
+  filter: drop-shadow(0 .1rem .2rem black);
+}
+
+/* INPUT SECTION */
+
+.input-section {
+  min-width: 360px;
+  max-width: 1600px;
+  width: 60vw;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+.input-section p {
+  display: flex;
+  justify-content: space-between;
+}
+label{
+  padding: 1rem;
+  line-height: 3rem;
+  text-align: justify;
+
+  filter: drop-shadow(0 .1rem .2rem black);
+  font-size: 2.5rem;
+}
+input, select {
+  width: 70%;
+  height: 4rem;
+  font-size: 2rem;
+  
+  text-align: center;
+
+  border: 0;
+  margin: 1rem;
+  padding: .5rem;
+  
+  border-radius: 1rem;
+  filter: drop-shadow(0 .1rem .1rem black);
+}
+button {
+  width: fit-content;
+  font-size: 3rem;
+  display: inline-block;
+  align-self: center;
+
+  margin: 3rem;
+  padding: 1.5rem;
+  
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  
+  background-image: linear-gradient(to right, white 0%, lightgray 51%, white 100%);
+  background-size: 200% auto;
+  
+  color: black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.5);
+  
+  transition: 0.5s;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 2.5rem 3rem 3.5rem;
+  background-position: right center;
+}
+
+/* OUTPUT SECTION */
+
+.totais {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+table {
+  width: 95vw;
+}
+tbody td {
+  padding: .5rem 1rem;
+
+  border: .3rem solid mediumslateblue;
+  border-radius: 1rem;
+
+  background-color: white;
+  color: black;
+}
+thead td, tfoot td{
+  padding: 1rem;
+  line-height: 3rem;
+
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  border: .3rem solid mediumslateblue;
+  border-radius: 1rem;
+
+  background-color: lightgray;
+  color: black;
+}
